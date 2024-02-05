@@ -1,0 +1,27 @@
+---
+charset:
+  preset:
+    list:
+      num: "012345678"
+      alphabetlower: "abcdefghijklmnopqrstuvwxyz"
+      alphabetupper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      alphabetlowerupper: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+      alphabetloweruppernum: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345678"
+bruteforce:
+  length: 8
+  rainbow:
+    enabled: false
+    path: "example.txt"
+  wordlist:
+    enabled: false
+    path: "example.txt"
+  charset:
+    enabled: true
+    default: "alphabetloweruppernum"
+threads: 0 # 0 Use $(nproc)
+log:
+  level: "ERROR"
+  file:
+    enabled: false # Enable logging to file
+    file: ""
+

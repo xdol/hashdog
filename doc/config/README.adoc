@@ -1,0 +1,32 @@
+= Config :
+
+== Options
+* charset : Character list for bruteforce
+** preset : List of pre-made charset
+** default : Default charset
+* bruteforce : bruteforce config
+** length : max string length to calculate
+** rainbow :
+*** enabled : enable this mode
+*** path : path to wordlist
+** wordlist : config for wordlist mode
+*** enabled : enable this mode
+*** path : path to wordlist
+** charset : charse mode
+*** enabled : enable this mode
+*** default : default charset to use
+
+[,go]
+----
+type Config struct {
+	charset string `yaml:"charset"`
+	length  uint8 `yaml:"length"`
+}
+----
+
+== Example :
+[source,yaml]
+----
+include::config.example.yaml[]
+----
+
