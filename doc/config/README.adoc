@@ -16,12 +16,9 @@
 *** enabled : enable this mode
 *** default : default charset to use
 
-[,go]
+[source,go]
 ----
-type Config struct {
-	charset string `yaml:"charset"`
-	length  uint8 `yaml:"length"`
-}
+include::../../internal/config/config.go[]
 ----
 
 == Example :
