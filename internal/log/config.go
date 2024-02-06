@@ -1,9 +1,9 @@
 package log
 
 type Config struct {
-	level string
-	file  struct {
-		enabled bool
-		file    string
+	Level string
+	File  struct {
+		Enabled bool
+		File    string
 	}
 }

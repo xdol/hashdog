@@ -6,7 +6,9 @@ import (
 )
 
 type Config struct {
-	rainbow  rainbow.Config
-	wordlist rainbow.Config
-	charset  charset.Config
+	Length   uint8
+	Threads  uint8
+	Rainbow  rainbow.Config
+	Wordlist rainbow.Config
+	Charset  charset.Config
 }

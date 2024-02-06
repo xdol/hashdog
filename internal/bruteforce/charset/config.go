@@ -1,7 +1,7 @@
 package charset
 
 type Config struct {
-	enabled bool
-	path    string
-	list    map[string][]string
+	Enabled bool
+	Path    string
+	List    map[string][]string
 }

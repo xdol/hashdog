@@ -6,8 +6,6 @@ import (
 )
 
 type Config struct {
-	bruteforce bruteforce.Config
-	length     uint8
-	threads    uint8
-	log        log.Config
+	Bruteforce bruteforce.Config
+	Log        log.Config
 }
