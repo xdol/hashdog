@@ -1,0 +1,37 @@
+---
+linters:
+  enable-all: true
+  disable:
+    # Deprecated
+    - deadcode
+    - ifshort
+    - scopelint
+    - maligned
+    - golint
+    - varcheck
+    - nosnakecase
+    - structcheck
+    - interfacer
+    - exhaustivestruct
+    # Conflicts with gofmt
+    - wsl
+    # We do like some empty structs
+    - exhaustruct
+    # Although useful, sometimes We need to return with errors before ending the functions
+    - wrapcheck
+
+linters-settings:
+  # Packages allowed
+  depguard:
+    rules:
+      prevent_unmaintained_packages:
+        # allow unless explicitly denied
+        files:
+          - $all
+          - $test
+        allow:
+          - $gostd
+  # Default values conflicts with gofmt
+  lll:
+    line-length: 160
+    tab-width: 1
