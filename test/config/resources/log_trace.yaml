@@ -1,0 +1,24 @@
+---
+bruteforce:
+  length: 8
+  threads: 0 # 0 Use $(nproc)
+  rainbow:
+    enabled: false
+    path: "example.txt"
+  wordlist:
+    enabled: false
+    path: "example.txt"
+  charset:
+    enabled: true
+    default: "alphabetloweruppernum"
+    list:
+      num: "0123456789"
+      alphabetlower: "abcdefghijklmnopqrstuvwxyz"
+      alphabetupper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      alphabetlowerupper: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+      alphabetloweruppernum: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345678"
+log:
+  level: "TRACE"
+  file:
+    enabled: false # Enable logging to file
+    file: ""
