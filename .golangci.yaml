@@ -31,6 +31,14 @@ linters-settings:
           - $test
         allow:
           - $gostd
+          - git.xdol.org/xdol/hashdog/internal/log
+          - git.xdol.org/xdol/hashdog/internal/bruteforce
+          - git.xdol.org/xdol/hashdog/internal/bruteforce/rainbow
+          - git.xdol.org/xdol/hashdog/internal/bruteforce/charset
+          - git.xdol.org/xdol/hashdog/internal/bruteforce/wordlist
+          - git.xdol.org/xdol/hashdog/internal/config
+          - github.com/goccy/go-yaml
+          - git.xdol.org/xdol/hashdog/test/helper
   # Default values conflicts with gofmt
   lll:
     line-length: 160
