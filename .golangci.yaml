@@ -37,7 +37,7 @@ linters-settings:
           - git.xdol.org/xdol/hashdog/internal/bruteforce/charset
           - git.xdol.org/xdol/hashdog/internal/bruteforce/wordlist
           - git.xdol.org/xdol/hashdog/internal/config
-          - github.com/goccy/go-yaml
+          - git.xdol.org/xdol/go-yaml
           - git.xdol.org/xdol/hashdog/test/helper
   # Default values conflicts with gofmt
   lll:

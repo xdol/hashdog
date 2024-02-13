@@ -3,7 +3,7 @@ package config
 import (
 	"os"
 
-	"github.com/goccy/go-yaml"
+	"git.xdol.org/xdol/go-yaml"
 )
 
 type LoadYamlError struct {
