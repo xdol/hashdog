@@ -17,7 +17,6 @@ func (m *LoadYamlError) Error() string {
 
 type VerifyConfigError struct {
 	problem string
-	err     error
 }
 
 func (m *VerifyConfigError) Error() string {
