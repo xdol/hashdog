@@ -2,7 +2,7 @@ module git.xdol.org/xdol/hashdog
 
 go 1.22
 
-require github.com/goccy/go-yaml v1.11.3
+require git.xdol.org/xdol/go-yaml v1.12.0
 
 require (
 	github.com/fatih/color v1.16.0 // indirect
