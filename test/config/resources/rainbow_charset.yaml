@@ -4,10 +4,10 @@ bruteforce:
   threads: 0 # 0 Use $(nproc)
   rainbow:
     enabled: true
-    path: "example.txt"
+    path: "rainbow.txt"
   wordlist:
     enabled: false
-    path: "example.txt"
+    path: "wordlist.txt"
   charset:
     enabled: true
     default: "alphabetloweruppernum"

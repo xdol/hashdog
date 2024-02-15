@@ -6,6 +6,7 @@ import (
 	"git.xdol.org/xdol/hashdog/internal/bruteforce"
 	"git.xdol.org/xdol/hashdog/internal/bruteforce/charset"
 	"git.xdol.org/xdol/hashdog/internal/bruteforce/rainbow"
+	"git.xdol.org/xdol/hashdog/internal/bruteforce/wordlist"
 	"git.xdol.org/xdol/hashdog/internal/config"
 	"git.xdol.org/xdol/hashdog/internal/log"
 	"git.xdol.org/xdol/hashdog/test/helper"
@@ -51,11 +52,11 @@ func (suite yamlTestSuite) TestFileLoad() { //nolint:funlen
 			Threads: 0,
 			Rainbow: rainbow.Config{
 				Enabled: false,
-				Path:    "example.txt",
+				Path:    "rainbow.txt",
 			},
-			Wordlist: rainbow.Config{
+			Wordlist: wordlist.Config{
 				Enabled: false,
-				Path:    "example.txt",
+				Path:    "wordlist.txt",
 			},
 			Charset: charset.Config{
 				Enabled: true,
